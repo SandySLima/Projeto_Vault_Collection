@@ -1,12 +1,208 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Vault Collection
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descrição da aplicação
+
+O **Vault Collection** é uma aplicação web desenvolvida em Laravel para auxiliar colecionadores no gerenciamento de suas coleções pessoais.
+
+O sistema permite cadastrar, organizar e acompanhar diversos tipos de itens colecionáveis, como mangás, HQs, action figures, Funko Pops, bonecas colecionáveis, jogos, Blu-rays, DVDs, steelbooks, miniaturas, cards e outros objetos.
+
+Além do cadastro dos itens, o sistema oferece recursos como favoritos, wishlist, upload de imagens, dashboard com estatísticas e gerenciamento de categorias e franquias.
+
+---
+
+# Funcionalidades
+
+* Autenticação de usuários (Laravel Breeze)
+* Dashboard com estatísticas da coleção
+* CRUD completo de Itens
+* CRUD completo de Categorias
+* CRUD completo de Franquias
+* Upload de imagem para cada item
+* Sistema de Favoritos
+* Sistema de Wishlist
+* Pesquisa por nome
+* Paginação das listagens
+* Interface responsiva utilizando Tailwind CSS
+
+---
+
+# Tecnologias utilizadas
+
+* PHP 8.x
+* Laravel 11
+* Laravel Breeze
+* Laravel Boost
+* Blade
+* Tailwind CSS
+* Alpine.js
+* MySQL
+* XAMPP
+* Composer
+* Node.js
+* Vite
+* Git
+* GitHub
+
+---
+
+# Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/SandySLima/Projeto_Vault_Collection.git
+```
+
+Entre na pasta:
+
+```bash
+cd Projeto_Vault_Collection
+```
+
+Instale as dependências do Composer:
+
+```bash
+composer install
+```
+
+Instale as dependências do Node:
+
+```bash
+npm install
+```
+
+Copie o arquivo de ambiente:
+
+```bash
+copy .env.example .env
+```
+
+Gere a chave da aplicação:
+
+```bash
+php artisan key:generate
+```
+
+Configure o banco de dados no arquivo `.env`.
+
+Execute as migrations:
+
+```bash
+php artisan migrate
+```
+
+Execute os seeders:
+
+```bash
+php artisan db:seed
+```
+
+Crie o link simbólico para armazenamento das imagens:
+
+```bash
+php artisan storage:link
+```
+
+Inicie o Vite:
+
+```bash
+npm run dev
+```
+
+Em outro terminal, inicie o servidor:
+
+```bash
+php artisan serve
+```
+
+A aplicação estará disponível em:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+# Banco de Dados
+
+O projeto utiliza MySQL.
+
+Após configurar corretamente o arquivo `.env`, execute:
+
+```bash
+php artisan migrate
+```
+
+Para popular o banco com dados iniciais:
+
+```bash
+php artisan db:seed
+```
+
+---
+
+# Usuários de teste
+
+Após executar os seeders estarão disponíveis os seguintes usuários:
+
+Sandy (neste usuário, se encontram itens colecionáveis e fotos adicionadas. Importante entrar nele para verificar.)
+
+Email: 
+
+```
+sandy@teste.com
+
+Senha:
+
+```
+teste1234
+
+Administrador
+
+Email:
+
+```
+admin@vault.com
+```
+
+Senha:
+
+```
+12345678
+```
+
+Usuário
+
+Email:
+
+```
+user@vault.com
+```
+
+Senha:
+
+```
+12345678
+```
+
+---
+
+# Estrutura do Projeto
+
+* CRUD de Itens
+* CRUD de Categorias
+* CRUD de Franquias
+* Dashboard
+* Favoritos
+* Wishlist
+* Upload de imagens
+
+---
+
+# Desenvolvedores
+
+Projeto desenvolvido para a disciplina de Desenvolvimento de Aplicações Web com Laravel.
+
 
 ## About Laravel
 
@@ -59,6 +255,5 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
-# Projeto_Vault_Collection
-Projeto criado para a disciplina de Desenvolvimento de Frameworks no IFSP.
+
 >>>>>>> 23cf53598778b4e39d17b8513cb5c5b71ac4b966
