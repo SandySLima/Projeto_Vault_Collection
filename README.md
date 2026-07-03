@@ -29,7 +29,7 @@ Além do cadastro dos itens, o sistema oferece recursos como favoritos, wishlist
 # Tecnologias utilizadas
 
 * PHP 8.x
-* Laravel 11
+* Laravel 12.62.0
 * Laravel Breeze
 * Laravel Boost
 * Blade
