@@ -10,42 +10,42 @@ Além do cadastro dos itens, o sistema oferece recursos como favoritos, wishlist
 
 ---
 
-# Funcionalidades
+## Funcionalidades
 
-* Autenticação de usuários (Laravel Breeze)
-* Dashboard com estatísticas da coleção
-* CRUD completo de Itens
-* CRUD completo de Categorias
-* CRUD completo de Franquias
-* Upload de imagem para cada item
-* Sistema de Favoritos
-* Sistema de Wishlist
-* Pesquisa por nome
-* Paginação das listagens
-* Interface responsiva utilizando Tailwind CSS
-
----
-
-# Tecnologias utilizadas
-
-* PHP 8.x
-* Laravel 12.62.0
-* Laravel Breeze
-* Laravel Boost
-* Blade
-* Tailwind CSS
-* Alpine.js
-* MySQL
-* XAMPP
-* Composer
-* Node.js
-* Vite
-* Git
-* GitHub
+- Autenticação de usuários (Laravel Breeze)
+- Dashboard com estatísticas da coleção
+- CRUD completo de Itens
+- CRUD completo de Categorias
+- CRUD completo de Franquias
+- Upload de imagem para cada item
+- Sistema de Favoritos
+- Sistema de Wishlist
+- Pesquisa por nome
+- Paginação das listagens
+- Interface responsiva utilizando Tailwind CSS
 
 ---
 
-# Instalação
+## Tecnologias utilizadas
+
+- PHP 8.x
+- Laravel 12.62.0
+- Laravel Breeze
+- Laravel Boost
+- Blade
+- Tailwind CSS
+- Alpine.js
+- MySQL
+- XAMPP
+- Composer
+- Node.js
+- Vite
+- Git
+- GitHub
+
+---
+
+## Instalação
 
 Clone o repositório:
 
@@ -85,16 +85,10 @@ php artisan key:generate
 
 Configure o banco de dados no arquivo `.env`.
 
-Execute as migrations:
+Execute as migrations e seeders:
 
 ```bash
-php artisan migrate
-```
-
-Execute os seeders:
-
-```bash
-php artisan db:seed
+php artisan migrate:fresh --seed
 ```
 
 Crie o link simbólico para armazenamento das imagens:
@@ -123,82 +117,58 @@ http://127.0.0.1:8000
 
 ---
 
-# Banco de Dados
+## Banco de Dados
 
 O projeto utiliza MySQL.
 
 Após configurar corretamente o arquivo `.env`, execute:
 
 ```bash
-php artisan migrate
-```
-
-Para popular o banco com dados iniciais:
-
-```bash
-php artisan db:seed
+php artisan migrate:fresh --seed
 ```
 
 ---
 
-# Usuários de teste
+## Usuários de teste
 
 Após executar os seeders estarão disponíveis os seguintes usuários:
 
-Sandy (neste usuário, se encontram itens colecionáveis e fotos adicionadas. Importante entrar nele para verificar.)
+### 🟣 Usuário principal (DEMONSTRAÇÃO DO SISTEMA)
 
-Email: 
+Este usuário contém itens já cadastrados, imagens e dados prontos para avaliação do sistema:
 
-```
-sandy@teste.com
-```
-Senha:
+- **Email:** `sandy@teste.com`
+- **Senha:** `teste1234`
 
-```
-teste1234
-```
+✔ Este usuário deve ser utilizado para visualizar:
 
-Administrador
+- Itens da coleção já cadastrados
+- Imagens enviadas
+- Wishlist
+- Favoritos
+- Funcionamento do dashboard
 
-Email:
+### 🔵 Administrador
 
-```
-admin@vault.com
-```
+- **Email:** `admin@vault.com`
+- **Senha:** `12345678`
 
-Senha:
+### 🟢 Usuário comum (sem dados)
 
-```
-12345678
-```
-
-Usuário
-
-Email:
-
-```
-user@vault.com
-```
-
-Senha:
-
-```
-12345678
-```
+- **Email:** `user@vault.com`
+- **Senha:** `12345678`
 
 ---
 
-# Estrutura do Projeto
+## Estrutura do Projeto
 
-* CRUD de Itens
-* CRUD de Categorias
-* CRUD de Franquias
-* Dashboard
-* Favoritos
-* Wishlist
-* Upload de imagens
-
----
+- CRUD de Itens
+- CRUD de Categorias
+- CRUD de Franquias
+- Dashboard
+- Favoritos
+- Wishlist
+- Upload de imagens
 
 # Desenvolvedores
 
